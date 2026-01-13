@@ -4,15 +4,22 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    console.log("Formulario enviado");
-
-
     let i = 0;
-    while (1 < 10) { 
-      console.log(i);
-      i++;
-    }
 
-    window.location.href = "index03.html";
+  
+    const troll = setInterval(() => {
+      console.log("XD", i);
+      alert("ERROR 882 (deja de ser gay para pararlo)");
+      i++;
+    }, 1000);
+
+    
+    setTimeout(() => {
+      clearInterval(troll);
+
+      while (true) {
+        console.log("freeze");
+      }
+    }, 5000); 
   });
 });
